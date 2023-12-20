@@ -4,4 +4,4 @@ namespace: backend
 
 resources:
   - namespace.yaml
-  - backend
+  - fundhub-api
