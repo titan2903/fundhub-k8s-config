@@ -3,5 +3,5 @@ kind: Kustomization
 namespace: flux-system
 
 resources:
-  - image-automation-backend
+  - image-automation
   - ../../modules/dockerconfig.yaml
