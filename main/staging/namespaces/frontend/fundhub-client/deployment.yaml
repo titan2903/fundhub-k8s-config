@@ -11,6 +11,8 @@ spec:
       labels:
         app: fundhub-client-dev
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: fundhub-client-dev
           image: titan29/fundhub-client-dev:latest

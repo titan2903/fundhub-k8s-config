@@ -1,0 +1,28 @@
+# Untuk login ke DockerHUB
+apiVersion: v1
+data:
+    .dockerconfigjson: ENC[AES256_GCM,data:MIRsThO2mQSl6ckFQtRd9008HAizhtIjteYb2/zKmv3C4xj0dR9VWo/XGUWJQvY79Vy2Cy8B9kp+wWlt7ISli+SVgng9FcIG6CTs1pbTOcEQf/5foQPGB3DnDXdKGvxFYM73YfafGmCcUQJl/PLwFPLJqEIN4lp+Ga0iYeAenQmMNJCAQ5SIeoYETH1YtdjM1l+8bsHUr1dipllu7aj8vHpm8BcCtvRrNKhkloQVeuC9Wmvhh7VeHiT33AZd8FkYI6gjF7YGorIn5kpxYXFW7b2hmj8CCEfMJD5ANorWojhQ0DmfnXrKyssTHvpOfR9qoTyXxq5w3kQ=,iv:CrczEi/ztsbvu86SSjCeEOESPoeC5uWnYrR408uaO3s=,tag:nxYTbedId9eGpbiwkY0f0A==,type:str]
+kind: Secret
+metadata:
+    name: regcred
+type: kubernetes.io/dockerconfigjson
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age19qqlzpgsdzxfsynkcamac9cpwup5x08t537pk6gzlvq38j592frs78y0nz
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAzU1UrTU5MMUlwMDVEd0hk
+            bktyWXRER2svc3FLV2RreUREdDZ1MWVXdmtZCkRBLzdWRWhlemZrR2QrYkxQY2Fa
+            V2EvNWZCUWJJc29KaVFlaTFlN2tiZkEKLS0tIHUwcjhkNHJwS1l1S0dYKzMzWUlr
+            N3BrSWFiWDdhUytablV0V2Z4STRvaUUKbiqZ/pIEiqDX7LXjzkrHAQyKRIlCFBnC
+            Dx8ul+YpnSnSeVDOWhFFLyMR2Day6oVzgnP7s7s/2XOqxdIrnpuYCQ==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2023-12-20T05:19:39Z"
+    mac: ENC[AES256_GCM,data:aYvOcl816pEu4mLoc6ZCxSBE1SCbf/gt4cZVgYrExMdRsJsl/6yagEdEKeIXLklX1OgmFMHssXdW9+0fO77/3xlpy9kXbhMXbw0R07KjVScK6yVzQVDUeWShyeK4Itn6+vc8iU10/HItJFERZRwkvQZeWpIoAhnPdpgQcMMoKEU=,iv:8mE9VRxu8iB4pidobmGALSRj0jZo9nS7mJim8f+hJv0=,tag:y6s5b/93IIMyW0iLWL+gkQ==,type:str]
+    pgp: []
+    encrypted_regex: ^(data|stringData)$
+    version: 3.8.1
