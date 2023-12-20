@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  sourceRef:
+  sourceRef: # bakal ambil dari Git Repository yang ada di minikube
     kind: GitRepository
     name: flux-system
   git:
@@ -14,8 +14,8 @@ spec:
         branch: master
     commit:
       author:
-        email: fluxcdbot@users.noreply.github.com
-        name: fluxcdbot
+        email: fluxcdbot@users.noreply.github.com # bisa di sesuaikan dengan kebutuhan
+        name: fluxcdbot # bisa di sesuaikan dengan kebutuhan
       messageTemplate: 'Update new Image: {{range .Updated.Images}}{{println .}}{{end}}' # Commit message
     push:
       branch: master

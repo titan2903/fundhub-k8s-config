@@ -18,10 +18,10 @@ spec:
           image: titan29/fundhub-client-dev:4
           resources:
             limits:
-              memory: "256Mi" # Adjust the memory limit based on your application's requirements
+              memory: "256Mi"
               cpu: "100m"
             requests:
-              memory: "128Mi" # Adjust the memory request based on your application's requirements
+              memory: "128Mi"
               cpu: "10m"
           ports:
             - containerPort: 3010
