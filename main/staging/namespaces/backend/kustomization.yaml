@@ -4,5 +4,5 @@ namespace: backend
 
 resources:
   - namespace.yaml
-  # - fundhub-api
-  # - ../../modules/dockerconfig.yaml
+  - fundhub-api
+  - ../../modules/dockerconfig.yaml
