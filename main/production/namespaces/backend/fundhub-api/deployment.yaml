@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fundhub-api
+spec:
+  selector:
+    matchLabels:
+      app: fundhub-api
+  template:
+    metadata:
+      labels:
+        app: fundhub-api
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+        - name: fundhub-api
+          image: titan29/fundhub-api:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+            requests:
+              memory: "32Mi"
+              cpu: "10m"
+          ports:
+            - containerPort: 8000
