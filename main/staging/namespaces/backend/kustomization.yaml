@@ -4,3 +4,4 @@ namespace: backend
 
 resources:
   - namespace.yaml
+  - backend

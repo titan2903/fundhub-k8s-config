@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fundhub-api-dev
+spec:
+  selector:
+    matchLabels:
+      app: fundhub-api-dev
+  template:
+    metadata:
+      labels:
+        app: fundhub-api-dev
+    spec:
+      containers:
+        - name: fundhub-api-dev
+          image: titan29/fundhub-api-dev:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+            requests:
+              memory: "68Mi"
+              cpu: "10m"
+          ports:
+            - containerPort: 8000
