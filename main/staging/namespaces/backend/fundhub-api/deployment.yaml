@@ -19,7 +19,7 @@ spec:
               memory: "128Mi"
               cpu: "100m"
             requests:
-              memory: "32Mi"   # Adjust the memory request based on your application's requirements
+              memory: "32Mi"
               cpu: "10m"
           ports:
             - containerPort: 8000
