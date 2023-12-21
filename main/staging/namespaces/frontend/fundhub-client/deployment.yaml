@@ -24,7 +24,7 @@ spec:
               memory: "128Mi"
               cpu: "10m"
           ports:
-            - containerPort: 3060
+            - containerPort: 3010
           env:
             - name: BASE_URL
               value: http://localhost:7000
