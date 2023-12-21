@@ -15,7 +15,7 @@ spec:
         - name: regcred
       containers:
         - name: fundhub-client-dev
-          image: titan29/fundhub-client-dev:6 # {"$imagepolicy": "flux-system:fundhub-client-dev"}
+          image: titan29/fundhub-client-dev:7 # {"$imagepolicy": "flux-system:fundhub-client-dev"}
           resources:
             limits:
               memory: "256Mi"
@@ -27,6 +27,6 @@ spec:
             - containerPort: 3000
           env:
             - name: BASE_URL
-              value: http://fundhub-api-dev-svc.backend.svc.cluster.local  # Include the protocol
+              value: http://fundhub-api-dev-svc.backend.svc.cluster.local # Include the protocol
             - name: PORT
               value: "3000"
