@@ -7,4 +7,4 @@ spec:
     app: fundhub-client-dev
   ports:
     - port: 80
-      targetPort: 3010
+      targetPort: 3060
