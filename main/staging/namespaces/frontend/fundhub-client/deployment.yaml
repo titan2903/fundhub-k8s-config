@@ -27,6 +27,6 @@ spec:
             - containerPort: 3000
           env:
             - name: BASE_URL
-              value: "http://fundhub-api-dev-svc.backend.svc.cluster.local"  # Include the protocol
+              value: http://fundhub-api-dev-svc.backend.svc.cluster.local  # Include the protocol
             - name: PORT
               value: "3000"
