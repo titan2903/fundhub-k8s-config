@@ -51,6 +51,11 @@ spec:
                 secretKeyRef:
                   name: fundhub-api-dev-secret
                   key: DB_PORT
+            - name: PORT
+              valueFrom:
+                secretKeyRef:
+                  name: fundhub-api-dev-secret
+                  key: PORT
             - name: SERVER_KEY
               valueFrom:
                 secretKeyRef:
