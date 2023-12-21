@@ -24,11 +24,11 @@ spec:
               memory: "128Mi"
               cpu: "10m"
           ports:
-            - containerPort: 3010
+            - containerPort: 3060
           env:
             - name: BASE_URL
               value: http://fundhub-api-dev-svc.backend.svc.cluster.local
             - name: PORT
-              value: "3010"
+              value: "3060"
             - name: TEST_DEBUG
               value: OK
