@@ -28,6 +28,6 @@ spec:
           env:
             - name: BASE_URL
               value: http://localhost:8000
-              # value: http://fundhub-api-dev-svc.backend.svc.cluster.local
+              # value: http://fundhub-api-dev-svc.backend.svc.cluster.local # Ini masih belum berhasil connect ke backend service
             - name: PORT
               value: "3000"
