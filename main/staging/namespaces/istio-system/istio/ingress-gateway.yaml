@@ -14,3 +14,20 @@ spec:
       protocol: HTTP
     hosts:
     - "fundhub.local" # host name
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: backend-gateway
+spec:
+  # The selector matches the ingress gateway pod labels.
+  # If you installed Istio using Helm following the standard documentation, this would be "istio=ingress"
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "fundhubdev.api.local" # host name
