@@ -6,3 +6,4 @@ resources:
   - namespace.yaml
   - fundhub-client
   - ../../modules/dockerconfig.yaml
+  - dashboard
