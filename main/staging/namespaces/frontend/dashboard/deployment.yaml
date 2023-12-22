@@ -25,18 +25,6 @@ spec:
             - containerPort: 8080
           env:
             - name: API_PRODUCT
-              value: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns # hit ke `service` yang sudah di set di kubernetes
+              value: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns
             - name: API_CUSTOMER
-              value: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns # Jika port bukan `80` maka perlu ditambahkan port pada bagian `.local:8080`
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: frontend-dashboard-svc
-  namespace: core
-spec:
-  selector:
-    app: frontend-dashboard
-  ports:
-    - port: 80
-      targetPort: 8080
+              value: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns
