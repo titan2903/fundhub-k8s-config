@@ -13,7 +13,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "fundhub.local" # host name
+    - "fundhubdev.local" # host name
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway

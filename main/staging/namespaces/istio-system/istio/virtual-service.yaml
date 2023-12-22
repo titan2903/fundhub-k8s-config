@@ -4,11 +4,11 @@ metadata:
   name: virtual-service-fe
 spec:
   hosts:
-  - "fundhub.local"
+  - "fundhubdev.local"
   gateways:
   - frontend-gateway
   http:
-  - name: "fundhub-app"
+  - name: "fundhub-dev-app"
     route: 
     - destination:
         host: fundhub-client-dev-svc.frontend.svc.cluster.local
