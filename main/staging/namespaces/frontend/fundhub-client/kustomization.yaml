@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - deployment-dashboard.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
