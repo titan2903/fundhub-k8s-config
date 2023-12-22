@@ -33,3 +33,5 @@ spec:
               value: "3060"
             - name: TEST_DEBUG
               value: OK
+            - name: HOST
+              value: '0.0.0.0'
