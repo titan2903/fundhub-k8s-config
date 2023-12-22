@@ -27,8 +27,8 @@ spec:
             - containerPort: 3060
           env:
             - name: BASE_URL
-              value: http://fundhubdev.api.local
-              # value: http://fundhub-api-dev-svc.backend.svc.cluster.local
+              # value: http://fundhubdev.api.local
+              value: http://fundhub-api-dev-svc.backend.svc.cluster.local
             - name: PORT
               value: "3060"
             - name: TEST_DEBUG
