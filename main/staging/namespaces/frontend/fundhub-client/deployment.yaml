@@ -31,7 +31,5 @@ spec:
               value: http://fundhub-api-dev-svc.backend.svc.cluster.local
             - name: PORT
               value: "3060"
-            - name: TEST_DEBUG
-              value: OK
             - name: HOST
               value: '0.0.0.0'
