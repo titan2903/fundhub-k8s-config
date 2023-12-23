@@ -6,13 +6,13 @@ spec:
   hosts:
     - "fundhub-api-svc.backend.svc.cluster.local"
   http:
-    - name: "customer-canary-deployment"
+    - name: "fundhub-canary-deployment"
       route:
         - destination:
             host: fundhub-api-svc.backend.svc.cluster.local
             subset: v1
-          weight: 90
+          weight: 60
         - destination:
             host: fundhub-api-svc.backend.svc.cluster.local
             subset: v2
-          weight: 10
+          weight: 40
