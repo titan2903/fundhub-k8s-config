@@ -1,18 +1,18 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: virtual-service-fundhub-api
+  name: virtual-service-fundhub-client
 spec:
   hosts:
-    - "fundhub-api-svc.backend.svc.cluster.local"
+    - "fundhub-client-svc.frontend.svc.cluster.local"
   http:
     - name: "fundhub-canary-deployment"
       route:
         - destination:
-            host: fundhub-api-svc.backend.svc.cluster.local
+            host: fundhub-client-svc.frontend.svc.cluster.local
             subset: v1
           weight: 60
         - destination:
-            host: fundhub-api-svc.backend.svc.cluster.local
+            host: fundhub-client-svc.frontend.svc.cluster.local
             subset: v2
           weight: 40

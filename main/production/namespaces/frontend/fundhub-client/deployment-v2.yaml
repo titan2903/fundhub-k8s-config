@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fundhub-client
+  name: fundhub-client-v2
 spec:
   selector:
     matchLabels:
@@ -10,13 +10,13 @@ spec:
     metadata:
       labels:
         app: fundhub-client
-        version: "1.0"
+        version: "2.0"
     spec:
       imagePullSecrets:
         - name: regcred
       containers:
         - name: fundhub-client
-          image: titan29/fundhub-client:7
+          image: titan29/fundhub-client:8
           resources:
             limits:
               memory: "256Mi"
