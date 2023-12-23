@@ -5,4 +5,4 @@ resources:
   - frontend
   - tools
   - backend
-  # - istio-system
+  - istio-system

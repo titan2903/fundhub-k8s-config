@@ -23,7 +23,7 @@ spec:
   gateways:
   - backend-gateway
   http:
-  - name: "fundhub-api-app"
+  - name: "fundhub-api-prod"
     route: 
     - destination:
         host: fundhub-api-svc.backend.svc.cluster.local
