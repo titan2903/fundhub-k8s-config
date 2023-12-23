@@ -6,7 +6,7 @@ resources:
   - secret.yaml
   - destinationrule.yaml
   - virtual-service.yaml
-  - deployment2.yaml
+  - deployment-v2.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
