@@ -10,6 +10,7 @@ spec:
     metadata:
       labels:
         app: fundhub-client
+        varsion: "1.0"
     spec:
       imagePullSecrets:
         - name: regcred
