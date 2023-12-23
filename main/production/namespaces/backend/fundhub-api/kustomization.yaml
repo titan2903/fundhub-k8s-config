@@ -4,6 +4,7 @@ resources:
   - deployment.yaml
   - service.yaml
   - secret.yaml
+  - destinationrule.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
