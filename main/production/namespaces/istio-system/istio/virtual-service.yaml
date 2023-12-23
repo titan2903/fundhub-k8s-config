@@ -1,0 +1,29 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: virtual-service-fe
+spec:
+  hosts:
+  - "fundhub.local"
+  gateways:
+  - frontend-gateway
+  http:
+  - name: "fundhub-app"
+    route: 
+    - destination:
+        host: fundhub-client-svc.frontend.svc.cluster.local
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: virtual-service-be
+spec:
+  hosts:
+  - "fundhub.api.local"
+  gateways:
+  - backend-gateway
+  http:
+  - name: "fundhub-api-app"
+    route: 
+    - destination:
+        host: fundhub-api-svc.backend.svc.cluster.local
