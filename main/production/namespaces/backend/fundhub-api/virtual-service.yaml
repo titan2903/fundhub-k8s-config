@@ -4,15 +4,15 @@ metadata:
   name: virtual-service-fundhub-be
 spec:
   hosts:
-    - "fundhub.api.local"
+    - "fundhub-api-svc.backend.svc.cluster.local"
   http:
     - name: "customer-canary-deployment"
       route:
         - destination:
-            host: fundhub.api.local
+            host: fundhub-api-svc.backend.svc.cluster.local
             subset: v1
           weight: 90
         - destination:
-            host: fundhub.api.local
+            host: fundhub-api-svc.backend.svc.cluster.local
             subset: v2
           weight: 10
