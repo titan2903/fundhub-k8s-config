@@ -6,4 +6,4 @@ resources:
   - image-automation
   - ../../modules/dockerconfig.yaml
   - discord
-  - gitub
+  - github
