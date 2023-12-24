@@ -5,5 +5,5 @@ metadata:
 data:
   # BASE_URL: http://fundhub-api-dev-svc.backend.svc.cluster.local
   BASE_URL: http://fundhub.api.local
-  PORT: "3060"
+  PORT: "3010"
   HOST: "0.0.0.0"
