@@ -25,4 +25,4 @@ spec:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: frontend-config
+                name: frontend-dashboard-config
