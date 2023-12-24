@@ -25,11 +25,6 @@ spec:
               cpu: "10m"
           ports:
             - containerPort: 3060
-          env:
-            - name: BASE_URL
-              # value: http://fundhubdev.api.local
-              value: http://fundhub-api-dev-svc.backend.svc.cluster.local
-            - name: PORT
-              value: "3060"
-            - name: HOST
-              value: '0.0.0.0'
+          envFrom:
+            - configMapRef:
+                name: fundhub-client-config
