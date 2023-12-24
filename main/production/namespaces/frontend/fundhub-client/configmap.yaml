@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fundhub-client-config
+data:
+  # BASE_URL: http://fundhub-api-dev-svc.backend.svc.cluster.local
+  BASE_URL: http://fundhub.api.local
+  PORT: "3060"
+  HOST: "0.0.0.0"

@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+  - configmap.yaml
   - destinationrule.yaml
   - virtual-service.yaml
   - deployment-v2.yaml

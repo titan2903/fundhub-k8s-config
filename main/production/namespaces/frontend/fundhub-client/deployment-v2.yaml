@@ -26,8 +26,6 @@ spec:
               cpu: "10m"
           ports:
             - containerPort: 3010
-          env:
-            - name: PORT
-              value: "3010"
-            - name: HOST
-              value: "0.0.0.0"
+          envFrom:
+            - configMapRef:
+                name: fundhub-client-config
