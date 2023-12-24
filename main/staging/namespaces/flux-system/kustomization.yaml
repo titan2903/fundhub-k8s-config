@@ -5,3 +5,4 @@ namespace: flux-system
 resources:
   - image-automation
   - ../../modules/dockerconfig.yaml
+  - discord
