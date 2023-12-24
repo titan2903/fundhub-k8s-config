@@ -9,6 +9,6 @@ spec:
   eventSeverity: info
   eventSources:
     - kind: GitRepository
-      name: 'fundhub-k8s-config'
+      name: '*'
     - kind: Kustomization
       name: '*'
