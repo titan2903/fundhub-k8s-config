@@ -23,8 +23,6 @@ spec:
               cpu: "10m"
           ports:
             - containerPort: 8080
-          env:
-            - name: API_PRODUCT
-              value: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns
-            - name: API_CUSTOMER
-              value: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns
+          envFrom:
+            - configMapRef:
+                name: frontend-config

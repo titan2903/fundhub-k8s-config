@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+data:
+  API_PRODUCT: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns
+  API_CUSTOMER: http://fundhub-api-dev-svc.backend.svc.cluster.local/api/v1/campaigns
