@@ -12,17 +12,15 @@ spec:
         app: fundhub-dashboard
         version: "1.0"
     spec:
-      imagePullSecrets:
-        - name: regcred
       containers:
         - name: fundhub-dashboard
-          image: titan29/fundhub-dashboard-dev:2
+          image: titan29/fundhub-dashboard:13
           resources:
             limits:
-              memory: "256Mi"
+              memory: "128Mi"
               cpu: "100m"
             requests:
-              memory: "128Mi"
+              memory: "68Mi"
               cpu: "10m"
           ports:
             - containerPort: 8080
