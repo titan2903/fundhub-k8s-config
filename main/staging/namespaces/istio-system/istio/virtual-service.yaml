@@ -27,7 +27,7 @@ spec:
   - name: "fundhub-dev-dashboard"
     route: 
     - destination:
-        host: frontend-dashboard-svc.frontend.svc.cluster.local
+        host: fundhub-dashboard-dev-svc.frontend.svc.cluster.local
 ---
 
 apiVersion: networking.istio.io/v1alpha3

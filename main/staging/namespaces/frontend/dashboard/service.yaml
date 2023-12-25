@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: frontend-dashboard-svc
+  name: fundhub-dashboard-dev-svc
 spec:
   selector:
-    app: frontend-dashboard
+    app: fundhub-dashboard-dev
   ports:
     - port: 80
       targetPort: 8080
