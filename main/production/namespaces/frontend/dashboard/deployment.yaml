@@ -19,10 +19,10 @@ spec:
           image: titan29/fundhub-dashboard:4
           resources:
             limits:
-              memory: "128Mi"
+              memory: "256Mi"
               cpu: "100m"
             requests:
-              memory: "68Mi"
+              memory: "128Mi"
               cpu: "10m"
           ports:
             - containerPort: 8080
