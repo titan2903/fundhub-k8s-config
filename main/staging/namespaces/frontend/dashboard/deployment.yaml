@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: fundhub-dashboard-dev
-          image: titan29/fundhub-dashboard-dev:1
+          image: titan29/fundhub-dashboard-dev:1 # {"$imagepolicy": "fundhub-dashboard-dev"}
           resources:
             limits:
               memory: "128Mi"
