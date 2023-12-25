@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-dashboard
+  name: fundhub-dashboard-dev
 spec:
   selector:
     matchLabels:
-      app: frontend-dashboard
+      app: fundhub-dashboard-dev
   template:
     metadata:
       labels:
-        app: frontend-dashboard
+        app: fundhub-dashboard-dev
     spec:
       containers:
-        - name: frontend-dashboard
-          image: aditirvan/istio-sample-app:dashboard
+        - name: fundhub-dashboard-dev
+          image: titan29/fundhub-dashboard-dev:1 # {"$imagepolicy": "fundhub-dashboard-dev"}
           resources:
             limits:
               memory: "128Mi"
@@ -25,4 +25,4 @@ spec:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: frontend-dashboard-config
+                name: fundhub-dashboard-config
