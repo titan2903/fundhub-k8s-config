@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: fundhub-dashboard-config
 data:
-  BASE_API_URL: http://fundhub-api-svc.backend.svc.cluster.local
+  # BASE_API_URL: http://fundhub-api-svc.backend.svc.cluster.local
   PORT: "8080"
   BASE_URL: /
