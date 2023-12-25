@@ -2,7 +2,6 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: fundhub-api-dev
-  namespace: flux-system
 spec:
   image: titan29/fundhub-api-dev
   interval: 1m
@@ -13,7 +12,6 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: fundhub-client-dev
-  namespace: flux-system
 spec:
   image: titan29/fundhub-client-dev
   interval: 1m
@@ -24,7 +22,6 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: fundhub-dashboard-dev
-  namespace: flux-system
 spec:
   image: titan29/fundhub-dashboard-dev
   interval: 1m
