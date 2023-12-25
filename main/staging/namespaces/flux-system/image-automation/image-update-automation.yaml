@@ -14,7 +14,7 @@ spec:
     commit:
       author:
         email: fluxcdbot@users.noreply.github.com # bisa di sesuaikan dengan kebutuhan
-        name: fluxcdbot # bisa di sesuaikan dengan kebutuhan
+        name: fluxcdbot
       messageTemplate: 'Update new Image: {{range .Updated.Images}}{{println .}}{{end}}' # Commit message
     push:
       branch: master
