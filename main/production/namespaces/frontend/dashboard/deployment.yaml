@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: fundhub-dashboard
 spec:
+  replicas: 1  # Set the desired number of replicas to 1
   selector:
     matchLabels:
       app: fundhub-dashboard
