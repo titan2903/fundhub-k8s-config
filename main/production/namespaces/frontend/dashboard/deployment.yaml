@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fundhub-dashboard
-          image: titan29/fundhub-dashboard:13
+          image: titan29/fundhub-dashboard:14
           resources:
             limits:
               memory: "128Mi"
