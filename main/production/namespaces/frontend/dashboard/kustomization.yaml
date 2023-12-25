@@ -4,6 +4,9 @@ resources:
   - deployment.yaml
   - service.yaml
   - configmap.yaml
+  - deployment-v2.yaml
+  - destinationrule.yaml
+  - virtual-service.yaml
 
 generatorOptions:
   disableNameSuffixHash: true

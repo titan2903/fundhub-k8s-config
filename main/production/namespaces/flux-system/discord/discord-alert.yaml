@@ -3,7 +3,7 @@ kind: Alert
 metadata:
   name: on-call-webapp
 spec:
-  summary: "cluster staging"
+  summary: "cluster production"
   providerRef:
     name: discord
   eventSeverity: info

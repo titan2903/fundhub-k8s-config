@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: virtual-service-fundhub-dashboard
+spec:
+  hosts:
+    - "fundhub-dashboard-svc.frontend.svc.cluster.local"
+  http:
+    - name: "fundhub-dashboard-canary-deployment"
+      route:
+        - destination:
+            host: fundhub-dashboard-svc.frontend.svc.cluster.local
+            subset: v1
+          weight: 60
+        - destination:
+            host: fundhub-dashboard-svc.frontend.svc.cluster.local
+            subset: v2
+          weight: 40
