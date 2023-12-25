@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fundhub-dashboard
+spec:
+  selector:
+    matchLabels:
+      app: fundhub-dashboard
+  template:
+    metadata:
+      labels:
+        app: fundhub-dashboard
+    spec:
+      containers:
+        - name: fundhub-dashboard
+          image: titan29/fundhub-dashboard:1
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+            requests:
+              memory: "68Mi"
+              cpu: "10m"
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: fundhub-dashboard-config
