@@ -44,3 +44,19 @@ spec:
     route: 
     - destination:
         host: fundhub-api-dev-svc.backend.svc.cluster.local
+---
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: virtual-service-tools
+spec:
+  hosts:
+  - "grafana.monitoring.local"
+  gateways:
+  - tools-gateway
+  http:
+  - name: "tools-monitoring"
+    route: 
+    - destination:
+        host: grafana.tools.svc.cluster.local
