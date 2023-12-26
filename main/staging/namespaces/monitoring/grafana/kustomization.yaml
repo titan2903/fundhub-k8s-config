@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - grafana-release.yaml
   - secret.yaml
+  - grafana-annotations.yaml

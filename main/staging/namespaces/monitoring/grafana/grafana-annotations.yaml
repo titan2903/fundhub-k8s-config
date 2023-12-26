@@ -1,8 +1,7 @@
-apiVersion: notification.toolkit.fluxcd.io/v1beta3
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
 kind: Alert
 metadata:
   name: grafana
-  namespace: monitoring
 spec:
   providerRef:
     name: grafana
@@ -12,13 +11,12 @@ spec:
       name: '*'
       namespace: flux-system
 ---
-apiVersion: notification.toolkit.fluxcd.io/v1beta3
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
 kind: Provider
 metadata:
   name: grafana
-  namespace: monitoring
 spec:
   type: grafana
-  address: "http://kube-prometheus-stack-grafana.monitoring/api/annotations"
+  address: "http://grafana.monitoring.local/api/annotations"
   secretRef:
     name: grafana-token
