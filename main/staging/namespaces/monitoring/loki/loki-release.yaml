@@ -18,8 +18,8 @@ spec:
   values:
     promtail:
       enabled: true
-    # loki:
-    #   enabled: true
+    loki:
+      enabled: true
     #   isDefault: false
     #   serviceMonitor:
     #     enabled: true
