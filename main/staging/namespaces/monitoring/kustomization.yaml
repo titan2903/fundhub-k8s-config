@@ -6,5 +6,5 @@ resources:
   - namespace.yaml
   - ../../../../helm/grafana/helm-repository.yaml
   - grafana
-  - loki-stack
+  - loki
   - ../../../../helm/prometheus-community/helm-repository.yaml
