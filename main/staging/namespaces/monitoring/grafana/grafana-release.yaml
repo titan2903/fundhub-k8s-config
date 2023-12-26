@@ -9,7 +9,7 @@ spec:
       chart: grafana
       sourceRef:
         kind: HelmRepository
-        name: grafana
+        name: grafana-charts
       interval: 1m
   values:
     admin:
