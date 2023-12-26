@@ -73,6 +73,8 @@ spec:
   - monitoring-gateway
   http:
   - name: "weave-monitoring"
-    route: 
+    route:
     - destination:
-        host: ww-gitops-weave-gitops.monitoring.svc.cluster.local:9001
+        host: ww-gitops-weave-gitops.monitoring.svc.cluster.local
+        port:
+          number: 9001
