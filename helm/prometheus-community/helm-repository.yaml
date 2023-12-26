@@ -3,5 +3,6 @@ kind: HelmRepository
 metadata:
   name: prometheus-community
 spec:
-  interval: 1m
-  url: https://prometheus-community.github.io/helm-charts # https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
+  interval: 12h
+  type: oci
+  url: oci://ghcr.io/prometheus-community/charts
