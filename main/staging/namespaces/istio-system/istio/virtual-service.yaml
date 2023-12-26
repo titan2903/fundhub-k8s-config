@@ -75,4 +75,4 @@ spec:
   - name: "weave-monitoring"
     route: 
     - destination:
-        host: ww-gitops-weave-gitops.monitoring.svc.cluster.local
+        host: ww-gitops-weave-gitops.monitoring.svc.cluster.local:9001
