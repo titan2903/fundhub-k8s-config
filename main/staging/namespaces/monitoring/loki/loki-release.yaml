@@ -21,8 +21,8 @@ spec:
     loki:
       enabled: true
       isDefault: false
-      serviceMonitor:
-        enabled: true
+      # serviceMonitor:
+      #   enabled: true
         # additionalLabels:
         #   app.kubernetes.io/part-of: kube-prometheus-stack
       config:
