@@ -11,10 +11,10 @@ spec:
         kind: HelmRepository
         name: prometheus-community
       interval: 1h
-  install:
-    crds: Create
-  upgrade:
-    crds: CreateReplace
+  # install:
+  #   crds: Create
+  # upgrade:
+  #   crds: CreateReplace
   # driftDetection:
   #   mode: enabled
   #   ignore:
