@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: grafana-charts
-      interval: 1m
+      interval: 10m
   values:
     admin:
       existingSecret: grafana-admin-secret
