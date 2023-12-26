@@ -8,4 +8,5 @@ resources:
   - grafana
   - loki
   - ../../../../helm/prometheus-community/helm-repository.yaml
+  - weave
   # - prometheus
