@@ -4,9 +4,9 @@ metadata:
   name: staging
   namespace: flux-system
 spec:
-  interval: 1m0s
+  interval: 1h
   retryInterval: 2m
-  timeout: 10m
+  timeout: 5m
   prune: true
   wait: true
   path: ./main/staging/namespaces
