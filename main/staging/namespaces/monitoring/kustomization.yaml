@@ -13,9 +13,9 @@ resources:
 configMapGenerator:
   - name: flux-grafana-dashboards
     files:
-      - configs/dashboards/control-plane.json
-      - configs/dashboards/cluster.json
-      - configs/dashboards/logs.json
+      - ./main/staging/namespaces/monitoring/configs/dashboards/control-plane.json
+      - ./main/staging/namespaces/monitoring/configs/dashboards/cluster.json
+      - ./main/staging/namespaces/monitoring/configs/dashboards/logs.json
     options:
       labels:
         grafana_dashboard: "1"
@@ -23,6 +23,6 @@ configMapGenerator:
         app.kubernetes.io/component: monitoring
   - name: flux-kube-state-metrics-config
     files:
-      - kube-prometheus-stack/kube-state-metrics-config.yaml
+      - ./main/staging/namespaces/monitoring/kube-prometheus-stack/kube-state-metrics-config.yaml
 configurations:
-  - kube-prometheus-stack/kustomizeconfig.yaml
+  - ./main/staging/namespaces/monitoring/kube-prometheus-stack/kustomizeconfig.yaml
