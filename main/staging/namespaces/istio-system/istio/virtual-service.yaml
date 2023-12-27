@@ -52,7 +52,7 @@ metadata:
   name: virtual-service-grafana
 spec:
   hosts:
-  - "grafana.monitoring.local"
+  - "grafanadev.monitoring.local"
   gateways:
   - monitoring-gateway
   http:
@@ -68,7 +68,7 @@ metadata:
   name: virtual-service-weave
 spec:
   hosts:
-  - "weave.monitoring.local"
+  - "weavedev.monitoring.local"
   gateways:
   - monitoring-gateway
   http:

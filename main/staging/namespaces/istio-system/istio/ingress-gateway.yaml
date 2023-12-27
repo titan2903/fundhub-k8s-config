@@ -50,5 +50,5 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "grafana.monitoring.local" # host name
-    - "weave.monitoring.local"
+    - "grafanadev.monitoring.local" # host name
+    - "weavedev.monitoring.local"
