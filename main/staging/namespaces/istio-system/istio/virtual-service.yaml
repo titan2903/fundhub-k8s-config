@@ -44,37 +44,37 @@ spec:
     route: 
     - destination:
         host: fundhub-api-dev-svc.backend.svc.cluster.local
----
+# ---
 
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: virtual-service-grafana
-spec:
-  hosts:
-  - "grafana.monitoring.local"
-  gateways:
-  - monitoring-gateway
-  http:
-  - name: "grafana-monitoring"
-    route: 
-    - destination:
-        host: grafana.tools.svc.cluster.local
----
+# apiVersion: networking.istio.io/v1alpha3
+# kind: VirtualService
+# metadata:
+#   name: virtual-service-grafana
+# spec:
+#   hosts:
+#   - "grafana.monitoring.local"
+#   gateways:
+#   - monitoring-gateway
+#   http:
+#   - name: "grafana-monitoring"
+#     route: 
+#     - destination:
+#         host: grafana.tools.svc.cluster.local
+# ---
 
-apiVersion: networking.istio.io/v1alpha3
-kind: VirtualService
-metadata:
-  name: virtual-service-weave
-spec:
-  hosts:
-  - "weave.monitoring.local"
-  gateways:
-  - monitoring-gateway
-  http:
-  - name: "weave-monitoring"
-    route:
-    - destination:
-        host: ww-gitops-weave-gitops.tools.svc.cluster.local
-        port:
-          number: 9001
+# apiVersion: networking.istio.io/v1alpha3
+# kind: VirtualService
+# metadata:
+#   name: virtual-service-weave
+# spec:
+#   hosts:
+#   - "weave.monitoring.local"
+#   gateways:
+#   - monitoring-gateway
+#   http:
+#   - name: "weave-monitoring"
+#     route:
+#     - destination:
+#         host: ww-gitops-weave-gitops.tools.svc.cluster.local
+#         port:
+#           number: 9001
