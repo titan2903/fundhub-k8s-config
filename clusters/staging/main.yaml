@@ -8,6 +8,7 @@ spec:
   retryInterval: 2m
   timeout: 10m
   prune: true
+  wait: true
   path: ./main/staging/namespaces
   sourceRef:
     kind: GitRepository
