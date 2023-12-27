@@ -38,7 +38,8 @@ spec:
           requests:
             cpu: 200m
             memory: 200Mi
-        podMonitorNamespaceSelector: { }
+        podMonitorNamespaceSelector:
+          any: true
         podMonitorSelector:
           matchLabels:
             app.kubernetes.io/component: monitoring
