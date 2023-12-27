@@ -4,7 +4,7 @@ namespace: tools
 
 resources:
   - namespace.yaml
-  - ../../../../helm/grafana/helm-repository.yaml
-  - grafana
-  # - ../../../../helm/prometheus-community/helm-repository.yaml
   - weave
+  # - ../../../../helm/grafana/helm-repository.yaml
+  # - grafana
+  # - ../../../../helm/prometheus-community/helm-repository.yaml

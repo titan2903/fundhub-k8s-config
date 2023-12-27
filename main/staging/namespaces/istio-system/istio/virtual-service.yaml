@@ -59,7 +59,7 @@ spec:
   - name: "grafana-monitoring"
     route: 
     - destination:
-        host: grafana.tools.svc.cluster.local
+        host: kube-prometheus-stack-grafana.monitoring.svc.cluster.local
 ---
 
 apiVersion: networking.istio.io/v1alpha3
