@@ -12,6 +12,8 @@ spec:
         app: fundhub-dashboard
         version: "2.0"
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: fundhub-dashboard
           image: titan29/fundhub-dashboard:15
