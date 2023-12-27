@@ -8,4 +8,3 @@ resources:
   - grafana
   # - ../../../../helm/prometheus-community/helm-repository.yaml
   - weave
-  - flux
