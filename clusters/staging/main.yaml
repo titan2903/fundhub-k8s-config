@@ -5,8 +5,11 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./main/staging/namespaces
+  retryInterval: 2m
+  timeout: 10m
   prune: true
+  wait: true
+  path: ./main/staging/namespaces
   sourceRef:
     kind: GitRepository
     name: flux-system
