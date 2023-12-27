@@ -6,7 +6,6 @@ resources:
   - namespace.yaml
   - ../../../../helm/grafana/helm-repository.yaml
   - grafana
-  - loki
   # - ../../../../helm/prometheus-community/helm-repository.yaml
   - weave
   - flux

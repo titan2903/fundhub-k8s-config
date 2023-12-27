@@ -1,13 +1,14 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
   name: loki-stack
 spec:
   interval: 5m
-  # dependsOn:
-  #   - name: kube-prometheus-stack
+  dependsOn:
+    - name: kube-prometheus-stack
   chart:
     spec:
+      version: "2.x"
       chart: loki-stack
       sourceRef:
         kind: HelmRepository
@@ -21,10 +22,10 @@ spec:
     loki:
       enabled: true
       isDefault: false
-      # serviceMonitor:
-      #   enabled: true
-        # additionalLabels:
-        #   app.kubernetes.io/part-of: kube-prometheus-stack
+      serviceMonitor:
+        enabled: true
+        additionalLabels:
+          app.kubernetes.io/part-of: kube-prometheus-stack
       config:
         chunk_store_config:
           max_look_back_period: 0s
