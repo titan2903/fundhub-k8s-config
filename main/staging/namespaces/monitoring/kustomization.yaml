@@ -9,4 +9,4 @@ resources:
   - loki
   - ../../../../helm/prometheus-community/helm-repository.yaml
   - weave
-  # - prometheus
+  - flux
