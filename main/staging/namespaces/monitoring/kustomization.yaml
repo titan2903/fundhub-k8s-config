@@ -16,13 +16,13 @@ configMapGenerator:
       - ./main/staging/namespaces/monitoring/configs/dashboards/control-plane.json
       - ./main/staging/namespaces/monitoring/configs/dashboards/cluster.json
       - ./main/staging/namespaces/monitoring/configs/dashboards/logs.json
+  - name: flux-kube-state-metrics-config
+    files:
+      - ./main/staging/namespaces/monitoring/kube-prometheus-stack/kube-state-metrics-config.yaml
     options:
       labels:
         grafana_dashboard: "1"
         app.kubernetes.io/part-of: flux
         app.kubernetes.io/component: monitoring
-  - name: flux-kube-state-metrics-config
-    files:
-      - ./main/staging/namespaces/monitoring/kube-prometheus-stack/kube-state-metrics-config.yaml
 configurations:
   - ./main/staging/namespaces/monitoring/kube-prometheus-stack/kustomizeconfig.yaml
