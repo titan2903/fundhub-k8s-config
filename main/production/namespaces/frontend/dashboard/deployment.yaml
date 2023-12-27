@@ -10,7 +10,7 @@ spec:
     metadata:
       labels:
         app: fundhub-dashboard
-        version: "1.0"
+        # version: "1.0"
     spec:
       imagePullSecrets:
         - name: regcred
