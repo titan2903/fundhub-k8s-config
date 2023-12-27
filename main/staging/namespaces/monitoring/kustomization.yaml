@@ -21,7 +21,6 @@ configMapGenerator:
         grafana_dashboard: "1"
         app.kubernetes.io/part-of: flux
         app.kubernetes.io/component: monitoring
-        istio-injection: enabled
 
   - name: flux-kube-state-metrics-config
     files:
