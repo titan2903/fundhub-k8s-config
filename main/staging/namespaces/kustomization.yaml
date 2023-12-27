@@ -7,3 +7,4 @@ resources:
   - backend
   - flux-system
   - istio-system
+  - monitoring
