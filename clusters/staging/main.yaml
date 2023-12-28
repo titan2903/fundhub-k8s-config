@@ -23,15 +23,15 @@ metadata:
   name: monitoring-controllers
   namespace: flux-system
 spec:
-  interval: 1m0s
+  interval: 1h
   retryInterval: 2m
-  prune: true
   timeout: 10m
-  # wait: true
+  prune: true
+  wait: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./main/staging/monitoring/controllers
+  path: ./main/staging/controllers
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
@@ -41,12 +41,12 @@ metadata:
 spec:
   dependsOn:
     - name: monitoring-controllers
-  interval: 1m0s
+  interval: 1h
   retryInterval: 2m
-  prune: true
   timeout: 5m
-  # wait: true
+  prune: true
+  wait: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./main/staging/monitoring/configs
+  path: ./main/staging/configs
