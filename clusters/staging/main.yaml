@@ -54,7 +54,3 @@ spec:
     kind: GitRepository
     name: flux-system
   path: ./main/staging/monitoring/configs
-  decryption:
-    provider: sops
-    secretRef:
-      name: sops-age 
