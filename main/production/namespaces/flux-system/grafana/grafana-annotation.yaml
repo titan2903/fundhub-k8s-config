@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: grafana
+  namespace: default
+spec:
+  type: grafana
+  address: http://grafana.monitoring.local/api/annotations
+  secretRef:
+    name: grafana-token
