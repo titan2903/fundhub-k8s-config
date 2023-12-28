@@ -27,9 +27,9 @@ spec:
   - kind: ConfigMap
     name: flux-kube-state-metrics-config
     valuesKey: kube-state-metrics-config.yaml
-  # - kind: Secret
-  #   name: grafana-admin-secret
-  #   valuesKey: password
+  - kind: Secret
+    name: grafana-admin-secret
+    valuesKey: password
   # https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/values.yaml
   values:
     alertmanager:
@@ -47,6 +47,5 @@ spec:
             app.kubernetes.io/component: monitoring
     grafana:
       defaultDashboardsEnabled: false
-      adminPassword: flux
-      # adminPasswordSecret: grafana-admin-secret
-      # adminPasswordSecretKey: password
+      adminPasswordSecret: grafana-admin-secret
+      adminPasswordSecretKey: password
