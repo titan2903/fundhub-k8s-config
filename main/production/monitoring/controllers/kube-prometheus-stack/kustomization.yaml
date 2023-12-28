@@ -5,6 +5,7 @@ resources:
   - namespace.yaml
   - ../../../../../helm/prometheus-community/helm-repository.yaml
   - release.yaml
+  - secret.yaml
 configMapGenerator:
   - name: flux-kube-state-metrics-config
     files:
