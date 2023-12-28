@@ -4,3 +4,4 @@ metadata:
   name: backend
   labels:
     istio-injection: enabled
+    app.kubernetes.io/component: monitoring
