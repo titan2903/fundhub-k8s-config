@@ -5,3 +5,4 @@ namespace: tools
 resources:
   - namespace.yaml
   - weave
+  - ../../../../helm/weave/helm-repository.yaml
