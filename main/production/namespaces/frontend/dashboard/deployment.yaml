@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       app: fundhub-dashboard
+  replicas: 1
   template:
     metadata:
       labels:
