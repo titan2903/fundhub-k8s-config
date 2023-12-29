@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: fundhub-dashboard
 spec:
+  replicas: 3
   selector:
     matchLabels:
       app: fundhub-dashboard
