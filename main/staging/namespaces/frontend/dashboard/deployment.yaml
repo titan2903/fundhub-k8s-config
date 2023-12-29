@@ -11,6 +11,8 @@ spec:
       labels:
         app: fundhub-dashboard-dev
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: fundhub-dashboard-dev
           image: titan29/fundhub-dashboard-dev:4 # {"$imagepolicy": "flux-system:fundhub-dashboard-dev"}
