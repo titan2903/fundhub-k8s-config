@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: fundhub-api-v2
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app: fundhub-api
