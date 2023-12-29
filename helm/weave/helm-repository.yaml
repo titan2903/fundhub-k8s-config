@@ -13,5 +13,5 @@ metadata:
   name: ww-gitops
 spec:
   interval: 1h0m0s
-  type: oci
+  type: "oci"
   url: oci://ghcr.io/weaveworks/charts
