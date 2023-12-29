@@ -12,3 +12,7 @@ spec:
       name: '*'
     - kind: Kustomization
       name: '*'
+    - Kind: HelmRepository
+      name: '*'
+    - kind: Namespace
+      name: '*'
