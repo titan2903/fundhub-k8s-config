@@ -13,6 +13,7 @@ spec:
         app: fundhub-api
         version: "2.0"
     spec:
+      hostNetwork: true
       imagePullSecrets:
         - name: regcred
       containers:
