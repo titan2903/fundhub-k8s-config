@@ -6,3 +6,4 @@ data:
   API_URL: http://fundhub-api-svc.backend.svc.cluster.local/api/v1/campaigns
   PORT: "8080"
   BASE_URL: /
+  ENV: "staging"
