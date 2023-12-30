@@ -6,5 +6,5 @@ spec:
   selector:
     app: fundhub-api
   ports:
-  - port: 8000
-    targetPort: 8000
+    - port: 80
+      targetPort: 8000
