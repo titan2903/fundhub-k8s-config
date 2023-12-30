@@ -87,7 +87,7 @@ metadata:
   name: virtual-service-kiali
 spec:
   hosts:
-  - "kiali.monitoring.local"
+  - "kialidev.monitoring.local"
   gateways:
   - monitoring-gateway
   http:

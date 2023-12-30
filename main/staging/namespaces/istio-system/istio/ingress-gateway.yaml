@@ -52,4 +52,4 @@ spec:
     hosts:
     - "weavedev.monitoring.local"
     - "grafanadev.monitoring.local" # host name
-    - "kiali.monitoring.local"
+    - "kialidev.monitoring.local"
