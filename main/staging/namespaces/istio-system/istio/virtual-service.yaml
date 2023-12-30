@@ -78,7 +78,6 @@ spec:
         host: ww-gitops-weave-gitops.tools.svc.cluster.local
         port:
           number: 9001
-
 ---
 
 apiVersion: networking.istio.io/v1alpha3
