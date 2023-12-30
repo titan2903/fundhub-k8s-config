@@ -78,3 +78,21 @@ spec:
         host: ww-gitops-weave-gitops.tools.svc.cluster.local
         port:
           number: 9001
+---
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: virtual-service-kiali
+spec:
+  hosts:
+  - "kiali.monitoring.local"
+  gateways:
+  - monitoring-gateway
+  http:
+  - name: "kiali-monitoring"
+    route:
+    - destination:
+        host: kiali.istio-system.svc.cluster.local
+        port:
+          number: 20001
