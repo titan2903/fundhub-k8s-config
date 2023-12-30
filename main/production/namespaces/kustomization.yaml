@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - frontend
-  - tools
   - backend
+  - tools
   - istio-system
   - flux-system
