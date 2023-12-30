@@ -3,6 +3,5 @@ kind: ConfigMap
 metadata:
   name: fundhub-client-config
 data:
-  BASE_URL: http://fundhub.api.local
   PORT: "3010"
   HOST: "0.0.0.0"
