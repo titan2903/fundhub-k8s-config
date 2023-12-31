@@ -11,8 +11,8 @@ spec:
         - destination:
             host: fundhub-dashboard-svc.frontend.svc.cluster.local
             subset: v1
-          weight: 50
+          weight: 40
         - destination:
             host: fundhub-dashboard-svc.frontend.svc.cluster.local
             subset: v2
-          weight: 50
+          weight: 60

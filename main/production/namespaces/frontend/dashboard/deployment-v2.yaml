@@ -17,7 +17,7 @@ spec:
         - name: regcred
       containers:
         - name: fundhub-dashboard
-          image: titan29/fundhub-dashboard:20
+          image: titan29/fundhub-dashboard:21
           resources:
             limits:
               memory: "128Mi"
