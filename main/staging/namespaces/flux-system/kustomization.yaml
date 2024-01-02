@@ -7,3 +7,4 @@ resources:
   - ../../modules/dockerconfig.yaml
   - discord
   - github
+  - age-secret.yaml
