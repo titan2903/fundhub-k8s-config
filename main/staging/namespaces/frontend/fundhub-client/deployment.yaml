@@ -16,7 +16,7 @@ spec:
         - name: regcred
       containers:
         - name: fundhub-client-dev
-          image: titan29/fundhub-client-dev:2 # {"$imagepolicy": "flux-system:fundhub-client-dev"}
+          image: titan29/fundhub-client-dev:3 # {"$imagepolicy": "flux-system:fundhub-client-dev"}
           resources:
             limits:
               memory: "256Mi"
