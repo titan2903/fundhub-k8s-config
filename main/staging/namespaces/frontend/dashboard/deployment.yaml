@@ -16,7 +16,8 @@ spec:
         - name: regcred
       containers:
         - name: fundhub-dashboard-dev
-          image: titan29/fundhub-dashboard-dev:8 # {"$imagepolicy": "flux-system:fundhub-dashboard-dev"}
+          # image: titan29/fundhub-dashboard-dev:8 # {"$imagepolicy": "flux-system:fundhub-dashboard-dev"}
+          image: titan29/fundhub-dashboard:2
           resources:
             limits:
               memory: "128Mi"
